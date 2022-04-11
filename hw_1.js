@@ -40,7 +40,7 @@ const data1 = [
 /* Нужно найти и сохранить в переменную индекс пользователя в массиве data1, у которого возраст равен 23 года. (ожидаемый результат: 1), 
 все остальное нужно искать в документации к пакету lodash */  
 
-let userIndex = _.findIndex(data1, ['age', 23]);
+const userIndex = _.findIndex(data1, ['age', 23]);
 
 console.log(userIndex);
 
@@ -48,7 +48,7 @@ console.log(userIndex);
 /* Объединить два массива data1 и data2 в один и записать этот результат в новую переменную 
 ( ожидаемый результат - это новый массив длиной 6 элементов) */
 
-let data3 = _.concat(data1, data2);
+const data3 = _.concat(data1, data2);
  
 console.log(data3, data3.length);
 
@@ -56,7 +56,6 @@ console.log(data3, data3.length);
 /* Взять любой объект из любого массива и на его основе создать новый объект, но выкинув из него поле “age”. 
 Опять же нужно использовать функцию из библиотеки lodash. Пример исходного объекта и результата см. во вложениях. */
 
-let object4 = _.pick(data1[0], ['name', 'email']);
+const object4 = _.pick(data1[0], ['name', 'email']);
 
 console.log(object4);
-
