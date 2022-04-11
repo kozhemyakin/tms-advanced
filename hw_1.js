@@ -59,3 +59,16 @@ console.log(data3, data3.length);
 const object4 = _.pick(data1[0], ['name', 'email']);
 
 console.log(object4);
+
+// задача 3 without lodash
+
+let objectFromArray = data1[0];
+
+const newObject = Object.keys(objectFromArray).reduce((object, key) => {
+  if (key !== 'age') {
+    object[key] = objectFromArray[key]
+  }
+  return object
+}, {})
+
+console.log(newObject);
