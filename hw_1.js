@@ -1,7 +1,6 @@
 var _ = require('lodash');
 
 // исходный
-
 const data1 = [
     {
       "age": 3,
