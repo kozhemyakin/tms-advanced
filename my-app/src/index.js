@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <Counter /> */}
 
-    <Checkbox btnColor="blue"/>
+    <Checkbox />
     
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,21 +1,29 @@
 import React from 'react';
+import { MdPause, MdRepeat, MdRepeatOne } from "react-icons/md";
 
 function Checkbox() {
 
-    const [ state, setState ] = React.useState('повтор треков выключен(1)');
+    const [ state, setState ] = React.useState('MdPause');
 
     const changeState = () => {
-        if (state === 'повтор треков выключен(1)') {
-            setState('повтор треков включен(2)')
-        } else if (state === 'повтор треков включен(2)') {
-            setState('включается повтор одного трека(3)')
-        } else if (state === 'включается повтор одного трека(3)') {
-            setState('повтор треков выключен(1)')
+        if (state === 'MdPause') {
+            setState('MdRepeat')
+        } else if (state === 'MdRepeat') {
+            setState('MdRepeatOne')
+        } else if (state === 'MdRepeatOne') {
+            setState('MdPause')
         }
     }
+
     return (
     <div className="empty">
-        <button onClick={changeState} style={{ color: btnColor }}>{state}</button>  
+        <button onClick={changeState}>
+        {state === 'MdPause' && <MdPause color="black" size="5em" />}
+        
+        {state === 'MdRepeat' && <MdRepeat color="grey" size="5em" />}
+        
+        {state === 'MdRepeatOne' && <MdRepeatOne color="#3667f7" size="5em"/>}
+         </button>  
     </div>
     )
 }
