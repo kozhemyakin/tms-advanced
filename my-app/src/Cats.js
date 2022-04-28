@@ -7,8 +7,8 @@ function Cats() {
     const circle = 'circle';
 
     const changeirclePositionX = () => {
-        setPositionX(Math.random() * 950);
-        setPositionY(Math.random() * 950);
+        setPositionX(Math.random() * 900);
+        setPositionY(Math.random() * 900);
     }
 
     const style = {
