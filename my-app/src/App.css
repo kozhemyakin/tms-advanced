@@ -54,3 +54,18 @@
   cursor: pointer;
   width: 150px;
 }
+
+.field {
+  width: 1000px;
+  height: 1000px;
+  background-color: antiquewhite;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(174, 76, 179);
+  cursor: pointer;
+}
