@@ -26,7 +26,7 @@ function ItalicText({ italic }) {
     return (
     <div>
         <span style={style}>Italic text is here </span>
-        <button onClick={changeState} className={`${className} ${btn}`} data-tip="hello world">I</button>
+        <button onClick={changeState} className={`${className} ${btn}`} data-tip="Сursive">I</button>
         <ReactTooltip place="top" type="dark" effect="float"/>
     </div>
     
