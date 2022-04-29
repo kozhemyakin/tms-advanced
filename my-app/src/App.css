@@ -68,4 +68,13 @@
   height: 100px;
   background-color: rgb(174, 76, 179);
   cursor: pointer;
+
+.btn {
+  width: 120px;
+  cursor: pointer;
+}
+
+.darkBtn {
+  background-color: #282c34;
+
 }
