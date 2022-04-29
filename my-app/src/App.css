@@ -54,3 +54,12 @@
   cursor: pointer;
   width: 150px;
 }
+
+.btn {
+  width: 120px;
+  cursor: pointer;
+}
+
+.darkBtn {
+  background-color: #282c34;
+}
