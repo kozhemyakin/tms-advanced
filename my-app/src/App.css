@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -68,6 +72,7 @@
   height: 100px;
   background-color: rgb(174, 76, 179);
   cursor: pointer;
+}
 
 .btn {
   width: 120px;
@@ -76,5 +81,15 @@
 
 .darkBtn {
   background-color: #282c34;
+}
 
+.taskCheckboxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.taskCheckboxes input {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
 }
