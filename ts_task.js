@@ -71,16 +71,32 @@ var users = [
         ]
     },
 ];
-// Написать функцию которая принимает список всех пользователей и возвращает список тех, кому больше 18-ти лет
-function getUser(users) {
-    var arrNewUsers = [];
-    for (var i = 0; i < users.length; i++) {
-        var age = users[i].age;
-        if (age > 18) {
-            arrNewUsers.push(users[i]);
-        }
+var getFullname = function (user) {
+    if (!user.name) {
+        return null;
     }
-    return arrNewUsers;
-}
-getUser(users);
-console.log(users);
+    return "".concat(user.name.first, " ").concat(user.name.last);
+};
+var hasFriendWithId = function (user, id) {
+    return user.friends.findIndex(function (friend) { return friend._id === id; }) !== -1;
+};
+var countActiveUser = function (users) {
+    return users.reduce(function (result, user) {
+        return user.isActive ? result + 1 : result;
+    }, 0);
+};
+// Написать функцию которая принимает список всех пользователей и возвращает список тех, кому больше 18-ти лет
+// function getUser(users:Obj3) {
+//   let arrNewUsers: User[] = [];  
+//   for (let i = 0; i < users.length; i++) {
+//     let { age } = users[i];
+//      if (age > 18) {
+//       arrNewUsers.push(users[i])
+//      }
+//   }
+//   return arrNewUsers;
+// }
+// getUser(users);
+// console.log(users);
+var usersOver18 = users.filter((function (user) { return user.age > 18; }));
+console.log(usersOver18);

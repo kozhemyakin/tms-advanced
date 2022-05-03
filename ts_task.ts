@@ -102,21 +102,42 @@ const users:Obj3 = [
   },
 ];
 
-// Написать функцию которая принимает список всех пользователей и возвращает список тех, кому больше 18-ти лет
-function getUser(users:Obj3) {
-  let arrNewUsers: User[] = [];  
-
-  for (let i = 0; i < users.length; i++) {
-    let { age } = users[i];
-    
-     if (age > 18) {
-      arrNewUsers.push(users[i])
-     }
+const getFullname = (user:User) => {
+  if (!user.name) {
+    return null;
   }
+  return `${user.name.first} ${user.name.last}`;
+};
 
-  return arrNewUsers;
-}
+const hasFriendWithId = (user:User, id:string) => {
+  return user.friends.findIndex((friend) => friend._id === id) !== -1;
+};
 
-getUser(users);
+const countActiveUser = (users:Obj3) => {
+  return users.reduce((result, user) => {
+    return user.isActive ? result + 1 : result;
+  }, 0);
+};
 
-console.log(users);
+// Написать функцию которая принимает список всех пользователей и возвращает список тех, кому больше 18-ти лет
+// function getUser(users:Obj3) {
+//   let arrNewUsers: User[] = [];  
+
+//   for (let i = 0; i < users.length; i++) {
+//     let { age } = users[i];
+    
+//      if (age > 18) {
+//       arrNewUsers.push(users[i])
+//      }
+//   }
+
+//   return arrNewUsers;
+// }
+
+// getUser(users);
+
+// console.log(users);
+
+const usersOver18:Obj3 = users.filter((user => user.age > 18));
+
+console.log(usersOver18);
