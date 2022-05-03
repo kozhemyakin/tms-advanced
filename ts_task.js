@@ -1,6 +1,6 @@
 var users = [
     {
-        _id: '3s94ac9asdads1ede80022812s',
+        id: '3s94ac9asdads1ede80022812s',
         index: 1,
         isActive: true,
         balance: '$3,341.99',
@@ -23,7 +23,7 @@ var users = [
         favoriteFruit: 'orange'
     },
     {
-        _id: '5e91ac98757a1ede800228ab',
+        id: '5e91ac98757a1ede800228ab',
         index: 0,
         isActive: false,
         balance: '$2,342.30',
