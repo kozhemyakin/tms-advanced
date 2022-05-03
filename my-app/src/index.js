@@ -10,7 +10,7 @@ ReactDOM.render(
     {/* <Counter /> */}
     {/* <Checkbox /> */}
     <Cats />
-    <ItalicText />
+    {/* <ItalicText /> */}
     
   </React.StrictMode>,
   document.getElementById('root')
