@@ -85,18 +85,4 @@ var countActiveUser = function (users) {
         return user.isActive ? result + 1 : result;
     }, 0);
 };
-// Написать функцию которая принимает список всех пользователей и возвращает список тех, кому больше 18-ти лет
-// function getUser(users:Obj3) {
-//   let arrNewUsers: User[] = [];  
-//   for (let i = 0; i < users.length; i++) {
-//     let { age } = users[i];
-//      if (age > 18) {
-//       arrNewUsers.push(users[i])
-//      }
-//   }
-//   return arrNewUsers;
-// }
-// getUser(users);
-// console.log(users);
-var usersOver18 = users.filter((function (user) { return user.age > 18; }));
-console.log(usersOver18);
+var usersOver18 = function (users) { return users.filter(function (user) { return user.age > 18; }); };

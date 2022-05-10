@@ -123,4 +123,4 @@ const countActiveUser = (users:User[]):number => {
   }, 0);
 };
 
-const usersOver18:User[] = users.filter((user => user.age > 18));
+const usersOver18 = (users:User[]): User[] => users.filter(user => user.age > 18);
