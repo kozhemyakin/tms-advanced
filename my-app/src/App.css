@@ -109,3 +109,11 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.trollface_card {
+  width: 320px;
+  height: 250px;
+  background-image: url(/public/Trollface.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
