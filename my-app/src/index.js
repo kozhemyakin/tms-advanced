@@ -6,6 +6,7 @@ import Cats from './Cats';
 import ItalicText from './ItalicText'
 import Task from './Task'
 import SayHi from './SayHi'
+import Login from './Login'
 import TimePicker from './TimePicker'
 
 ReactDOM.render(
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Task number={4} text={'fourth'} done={false} />
     <Task number={5} text={'fifth'} done={false} /> */}
     {/* <SayHi /> */}
+    <Login />
     <TimePicker />
 
   </React.StrictMode>,
