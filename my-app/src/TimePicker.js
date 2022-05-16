@@ -41,7 +41,7 @@ function TimePicker() {
         <div className='App-header'>
 
             <div className='clock'>
-                {hours} : {mins}
+                {hours < 10  ? '0' + hours : hours}:{mins < 10 ? '0' + mins : mins}
             </div>
 
             <div className="counters">
