@@ -5,13 +5,16 @@ import './App.css';
 import Cats from './Cats';
 import ItalicText from './ItalicText'
 import Task from './Task'
+import Counter from './Counter'
+import MyComponent from './Counter_class_comp'
 import SayHi from './SayHi'
 import Login from './Login'
 import TimePicker from './TimePicker'
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Counter /> */}
+    <Counter />
+    <MyComponent />
     {/* <Checkbox /> */}
     {/* <Cats /> */}
     {/* <ItalicText /> */}
