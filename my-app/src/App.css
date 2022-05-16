@@ -116,4 +116,14 @@
   background-image: url(/public/Trollface.svg);
   background-repeat: no-repeat;
   background-size: cover;
+
+.counters {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.clock {
+  font-size: 72px;
 }

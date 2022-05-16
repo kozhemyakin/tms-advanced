@@ -7,6 +7,7 @@ import ItalicText from './ItalicText'
 import Task from './Task'
 import SayHi from './SayHi'
 import Login from './Login'
+import TimePicker from './TimePicker'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.render(
     <Task number={5} text={'fifth'} done={false} /> */}
     {/* <SayHi /> */}
     <Login />
+    <TimePicker />
 
   </React.StrictMode>,
   document.getElementById('root')
