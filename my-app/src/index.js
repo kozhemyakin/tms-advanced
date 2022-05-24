@@ -10,11 +10,12 @@ import MyComponent from './Counter_class_comp'
 import SayHi from './SayHi'
 import Login from './Login'
 import TimePicker from './TimePicker'
+import PageContainer from './Pagination/PageContainer'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Counter />
-    <MyComponent />
+    {/* <Counter />
+    <MyComponent /> */}
     {/* <Checkbox /> */}
     {/* <Cats /> */}
     {/* <ItalicText /> */}
@@ -24,8 +25,9 @@ ReactDOM.render(
     <Task number={4} text={'fourth'} done={false} />
     <Task number={5} text={'fifth'} done={false} /> */}
     {/* <SayHi /> */}
-    <Login />
-    <TimePicker />
+    {/* <Login />
+    <TimePicker /> */}
+    <PageContainer />  
 
   </React.StrictMode>,
   document.getElementById('root')
