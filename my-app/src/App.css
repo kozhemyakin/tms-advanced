@@ -116,6 +116,7 @@
   background-image: url(/public/Trollface.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
 
 .counters {
   display: flex;
