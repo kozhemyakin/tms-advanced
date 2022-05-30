@@ -11,5 +11,8 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "npm": "^8.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
   }
 }
