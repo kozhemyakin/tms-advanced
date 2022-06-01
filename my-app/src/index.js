@@ -11,9 +11,16 @@ import SayHi from './SayHi'
 import Login from './Login'
 import TimePicker from './TimePicker'
 import PageContainer from './Pagination/PageContainer'
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './Navbar'
+import UserList from './UserList/UserList'
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* <Counter /> */}
+    {/* <Checkbox /> */}
+    <Cats />
+    {/* <ItalicText /> */}
     {/* <Counter />
     <MyComponent /> */}
     {/* <Checkbox /> */}
@@ -28,6 +35,10 @@ ReactDOM.render(
     {/* <Login />
     <TimePicker /> */}
     <PageContainer />  
+    <BrowserRouter>
+      <Navbar />
+    </BrowserRouter>
+    <UserList />
 
   </React.StrictMode>,
   document.getElementById('root')
