@@ -129,6 +129,13 @@
   font-size: 72px;
 }
 
+.post {
+  border: 1px solid #282c34;
+  padding: 10px;
+  margin: 10px;
+  background-color: beige;
+}
+
 .squareFigure {
   margin: 0 auto;
   width: 300px;
