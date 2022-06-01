@@ -12,9 +12,14 @@ import './App.css';
 // import TimePicker from './TimePicker'
 import { BrowserRouter } from 'react-router-dom'
 import Navbar from './Navbar'
+import UserList from './UserList/UserList'
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* <Counter /> */}
+    {/* <Checkbox /> */}
+    <Cats />
+    {/* <ItalicText /> */}
     {/* <Counter />
     <MyComponent /> */}
     {/* <Checkbox /> */}
@@ -31,6 +36,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Navbar />
     </BrowserRouter>
+    <UserList />
 
   </React.StrictMode>,
   document.getElementById('root')
