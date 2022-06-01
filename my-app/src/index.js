@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
-import Cats from './Cats';
-import ItalicText from './ItalicText'
-import Task from './Task'
-import Counter from './Counter'
-import MyComponent from './Counter_class_comp'
-import SayHi from './SayHi'
-import Login from './Login'
-import TimePicker from './TimePicker'
+// import Cats from './Cats';
+// import ItalicText from './ItalicText'
+// import Task from './Task'
+// import Counter from './Counter'
+// import MyComponent from './Counter_class_comp'
+// import SayHi from './SayHi'
+// import Login from './Login'
+// import TimePicker from './TimePicker'
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './Navbar'
 import UserList from './UserList/UserList'
 
 ReactDOM.render(
@@ -31,6 +33,9 @@ ReactDOM.render(
     {/* <SayHi /> */}
     {/* <Login />
     <TimePicker /> */}
+    <BrowserRouter>
+      <Navbar />
+    </BrowserRouter>
     <UserList />
 
   </React.StrictMode>,
